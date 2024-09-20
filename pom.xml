@@ -16,7 +16,7 @@
     <dependencies>
         <!-- Other dependencies -->
 
-        <!-- webapp-runner dependency -->
+        <!-- webapp-runner dependency updated to 9.0.27.1 -->
         <dependency>
             <groupId>com.github.jsimone</groupId>
             <artifactId>webapp-runner</artifactId>
@@ -28,26 +28,23 @@
         <finalName>thedevopslearning</finalName>
 
         <plugins>
-            <!-- Maven Dependency Plugin for copying specific artifacts -->
+            <!-- Maven Dependency Plugin for copying webapp-runner -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <version>3.1.1</version>
                 <executions>
                     <execution>
-                        <id>copy</id>
                         <phase>package</phase>
                         <goals>
                             <goal>copy</goal>
                         </goals>
                         <configuration>
-                            <!-- Define the artifact to be copied -->
                             <artifactItems>
                                 <artifactItem>
                                     <groupId>com.github.jsimone</groupId>
                                     <artifactId>webapp-runner</artifactId>
                                     <version>9.0.27.1</version>
-                                    <type>jar</type>
                                     <destFileName>webapp-runner.jar</destFileName>
                                 </artifactItem>
                             </artifactItems>
