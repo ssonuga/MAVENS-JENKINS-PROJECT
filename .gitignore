@@ -1,0 +1,53 @@
+# Ignore .DS_Store (macOS system files)
+**/.DS_Store
+
+# Maven target directory
+/target/
+
+# IntelliJ IDEA project files
+.idea/
+*.iml
+
+# Eclipse IDE project files
+.project
+.classpath
+.settings/
+bin/
+
+# NetBeans IDE project files
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# VS Code project files
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# Dependency directories
+/node_modules/
+**/node_modules/
+
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# OS-generated files
+Thumbs.db
+.DS_Store
+
+# Temporary files
+*.tmp
+*.swp
+
+# Build directories
+build/
